@@ -1,5 +1,5 @@
 import { useMemo } from "react"
-import { useMedia, useEffect } from "react-use"
+import { useMedia, useUpdateEffect } from "react-use"
 
 export declare type ColorScheme = "dark" | "light" | "auto"
 
@@ -10,7 +10,7 @@ export function useDark() {
   const prefersDarkMode = useMedia("(prefers-color-scheme: dark)")
   const isDark = useMemo(() => colorScheme === "auto" ? prefersDarkMode : colorScheme === "dark", [colorScheme, prefersDarkMode])
 
-  useEffect(() => {
+  useUpdateEffect(() => {
     document.documentElement.classList.toggle("dark", isDark)
   }, [isDark])
 
