@@ -1,5 +1,5 @@
 import { useMemo } from "react"
-import { useMedia, useUpdateEffect } from "react-use"
+import { useMedia, useEffect } from "react-use"
 
 export declare type ColorScheme = "dark" | "light" | "auto"
 
