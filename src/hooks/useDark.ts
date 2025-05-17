@@ -10,7 +10,7 @@ export function useDark() {
   const prefersDarkMode = useMedia("(prefers-color-scheme: dark)")
   const isDark = useMemo(() => colorScheme === "auto" ? prefersDarkMode : colorScheme === "dark", [colorScheme, prefersDarkMode])
 
-  useUpdateEffect(() => {
+  useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark)
   }, [isDark])
 
