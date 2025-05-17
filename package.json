@@ -5,11 +5,11 @@
   "private": true,
   "packageManager": "pnpm@10.5.2",
   "author": {
-    "url": "https://github.com/ourongxing/",
-    "email": "orongxing@gmail.com",
-    "name": "ourongxing"
+    "url": "https://github.com/jiakun93/",
+    "email": "jiakun93@gqq.com",
+    "name": "jiakun93"
   },
-  "homepage": "https://github.com/ourongxing/newsnow",
+  "homepage": "https://github.com/jiakun93/newsnow",
   "scripts": {
     "dev": "npm run presource && vite dev",
     "build": "npm run presource && vite build",
