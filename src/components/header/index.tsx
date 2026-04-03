@@ -55,7 +55,7 @@ export function Header() {
             <p>News Now</p>
             <p className="mt--1">
               <span className="color-primary-6">D</span>
-              <span>DigitalPlat</span>
+              <span>igitalPlat</span>
             </p>
           </span>
         </Link>
@@ -75,8 +75,15 @@ export function Header() {
         <Menu />
       </span>
       {/* 👇 新增这一行 */}
-      <div className="col-span-full text-center text-xs opacity-60 mt-2">
-        This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing
+      <div className="col-span-full text-center mt-2">
+        <a
+          href="https://digitalplat.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[1.5em] font-bold opacity-70 hover:opacity-100 hover:underline cursor-pointer transition"
+        >
+          This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing
+        </a>
       </div>      
     </>
   )
