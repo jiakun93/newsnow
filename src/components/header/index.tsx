@@ -54,9 +54,12 @@ export function Header() {
           <span className="text-2xl font-brand line-height-none!">
             <p>News Now</p>
             <p className="mt--1">
-              <span className="color-primary-6">DigitalPlat</span>
-              <span>This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing.</span>
+              <span className="color-primary-6">DigitalPlat:</span>
+              <span>This project uses DigitalPlat FreeDomain</span>
             </p>
+            <p className="mt--1">
+              <span>an open domain infrastructure maintained by Edward Hsing.</span>
+            </p>            
           </span>
         </Link>
         <a target="_blank" href={`${Homepage}/releases/tag/v${Version}`} className="btn text-sm ml-1 font-mono">
