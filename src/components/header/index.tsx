@@ -80,7 +80,7 @@ export function Header() {
           href="https://digitalplat.org"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[1.5em] font-bold opacity-70 hover:opacity-100 hover:underline cursor-pointer transition"
+          className="text-[1.2em] font-bold opacity-70 hover:opacity-100 hover:underline cursor-pointer transition"
         >
           This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing
         </a>
