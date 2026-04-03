@@ -50,26 +50,15 @@ export function Header() {
     <>
       <span className="flex justify-self-start">
         <Link to="/" className="flex gap-2 items-center">
-          <div
-            className="h-10 w-10 bg-cover shrink-0"
-            title="logo"
-            style={{ backgroundImage: "url(/icon.svg)" }}
-          />
-        
-          <div className="flex flex-col max-w-xs overflow-hidden">
-            <span className="text-2xl font-brand truncate">
-              News Now
-            </span>
-        
-            <span className="text-xs text-gray-500 leading-tight break-words">
-              DigitalPlat: This project uses DigitalPlat FreeDomain
-            </span>
-        
-            <span className="text-xs text-gray-500 leading-tight break-words">
-              an open domain infrastructure maintained by Edward Hsing.
-            </span>
-          </div>
-        </Link>        
+          <div className="h-10 w-10 bg-cover" title="logo" style={{ backgroundImage: "url(/icon.svg)" }} />
+          <span className="text-2xl font-brand line-height-none! max-w-[200px]">
+            <p>News Now</p>
+            <p className="mt--1 break-words">
+              <span className="color-primary-6">DigitalPlat</span>
+              <span>This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing.</span>
+            </p>
+          </span>
+        </Link>
         <a target="_blank" href={`${Homepage}/releases/tag/v${Version}`} className="btn text-sm ml-1 font-mono">
           {`v${Version}`}
         </a>
