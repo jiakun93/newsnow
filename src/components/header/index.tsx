@@ -51,12 +51,12 @@ export function Header() {
       <span className="flex justify-self-start">
         <Link to="/" className="flex gap-2 items-center">
           <div className="h-10 w-10 bg-cover" title="logo" style={{ backgroundImage: "url(/icon.svg)" }} />
-          <span className="text-2xl font-brand line-height-none! flex flex-col">
-            <span>News Now</span>
-            <span className="mt--1 flex items-center gap-1">
-              <span className="color-primary-6">DigitalPlat:</span>
-              <span>This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing</span>
-            </span>
+          <span className="text-2xl font-brand line-height-none!">
+            <p>News Now</p>
+            <p className="mt--1">
+              <span className="color-primary-6">D</span>
+              <span>DigitalPlat</span>
+            </p>
           </span>
         </Link>
         <a target="_blank" href={`${Homepage}/releases/tag/v${Version}`} className="btn text-sm ml-1 font-mono">
@@ -74,6 +74,10 @@ export function Header() {
         <Github />
         <Menu />
       </span>
+      {/* 👇 新增这一行 */}
+      <div className="col-span-full text-center text-xs opacity-60 mt-2">
+        This project uses DigitalPlat FreeDomain, an open domain infrastructure maintained by Edward Hsing
+      </div>      
     </>
   )
 }
